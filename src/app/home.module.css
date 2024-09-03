@@ -1,0 +1,185 @@
+/* src/app/home/home.module.css */
+
+.main {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('/images/golden-loaf.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+
+.hero-text {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adjust shadow size and opacity */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.ctaButton {
+  background-color: #e74c3c;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #c0392b;
+}
+
+.featured {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2.5rem;
+  color: #d35400;
+  margin-bottom: 40px;
+}
+
+/* Center images in their container and ensure consistent sizing */
+.featuredItems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.featuredItem {
+  background-color: #f7f7f7; /* Neutral background color */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuredItem img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Set a max height for uniformity */
+  object-fit: cover; /* Ensure images cover the area */
+  background-color: #e0e0e0; /* Neutral background color */
+}
+
+.featuredItem h3, .featuredItem p {
+  margin: 10px;
+}
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.imageGrid img {
+  max-width: 100%;
+  height: auto;
+  background-color: #e0e0e0; /* Neutral background color for gallery images */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f9f5f3;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #e74c3c; 
+  margin-bottom: 40px;
+}
+
+.testimonialQuotes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonialQuotes blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #34495e;
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 5px solid #e74c3c;
+  margin: 0;
+}
+
+/* Updated newsletter sign-up section with a different background color */
+.newsletter {
+  padding: 60px 20px;
+  background-color: #fff; /* A soft cream color to differentiate from the testimonials */
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  color: #e74c3c; /* Matching the orange/red color from hero and featured items */
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  color: #34495e; /* Dark color for good readability */
+  margin-bottom: 30px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: 2px solid #e74c3c; /* Matching border color with the orange/red theme */
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px; /* Ensure input fields don’t stretch too wide */
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e74c3c; /* Matching button background color with the orange/red theme */
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #c0392b; /* Slightly darker red for hover effect */
+}

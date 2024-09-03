@@ -1,0 +1,97 @@
+/* src/app/about/about.module.css */
+
+.container {
+  padding: 20px;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.hero {
+  background: url('/images/about-hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+}
+
+.story {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.story p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.storyImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.team {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+}
+
+.memberImage {
+  border-radius:10%;
+  margin-bottom: 10px;
+}
+
+.values {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #f0e8e0;
+  padding: 20px;
+  text-align: center;
+}
+
+.cta p {
+  font-size: 1.2rem;
+}
+
+.cta a {
+  color: #333;
+  text-decoration: underline;
+}

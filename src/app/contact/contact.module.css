@@ -1,0 +1,102 @@
+/* src/app/contact/contact.module.css */
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff6f61; /* Add red-orange color to the heading */
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contactInfo p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333; /* Keep text color dark for readability */
+}
+
+.contactForm {
+  padding: 40px 20px;
+  background-color: #eaeaea; /* Slightly darker background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-left: 5px solid #ff6f61; /* Add a red-orange accent border */
+}
+
+.contactForm h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff6f61; /* Apply the red-orange color to the section title */
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ff6f61; /* Label color to match theme */
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #ff6f61; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #e65a50; /* Slightly darker shade on hover */
+}
+
+.cta {
+  text-align: center;
+  margin-top: 30px;
+  color: #ff6f61; /* CTA text color matching the theme */
+  font-size: 1.2rem;
+}

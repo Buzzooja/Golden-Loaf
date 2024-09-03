@@ -1,95 +1,69 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// src/app/page.tsx
+
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './home.module.css';
+import { GiBread } from 'react-icons/gi';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <h1>Welcome to Golden Loaf</h1>
+        <p>Delicious baked goods made fresh daily.</p>
+        <Link href="/menu" className={styles.ctaButton}>
+          Explore Our Menu
+        </Link>
+      </section>
+
+      {/* Featured Items Section */}
+      <section className={styles.featured}>
+        <h2>Featured Items</h2>
+        <div className={styles.featuredItems}>
+          <div className={styles.featuredItem}>
+            <Image src="/images/croissant.jpg" alt="Croissant" width={300} height={200} />
+            <h3>Buttery Croissants</h3>
+            <p>Our croissants are made fresh daily, with a perfect flaky crust.</p>
+          </div>
+          <div className={styles.featuredItem}>
+            <Image src="/images/cake.jpg" alt="Cake" width={300} height={200} />
+            <h3>Chocolate Cake</h3>
+            <p>A rich, moist chocolate cake that&apos;s a crowd favourite.</p>
+          </div>
+          <div className={styles.featuredItem}>
+            <Image src="/images/pastries.jpg" alt="Pastries" width={300} height={200} />
+            <h3>Assorted Pastries</h3>
+            <p>A variety of sweet and savoury pastries to start your day right.</p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* Testimonials Section */}
+      <section className={styles.testimonials}>
+        <h2>What Our Customers Say</h2>
+        <div className={styles.testimonialQuotes}>
+          <blockquote>
+          &quot;The best bakery in town! The croissants are to die for.&quot;
+          </blockquote>
+          <blockquote>
+          &quot;I love their chocolate cake. It&apos;s my go-to for every special occasion.&quot;
+          </blockquote>
+          <blockquote>
+          &quot;Such a cozy place with the friendliest staff. Highly recommend!&quot;
+          </blockquote>
+        </div>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {/* Newsletter Sign-Up Section */}
+      <section className={styles.newsletter}>
+        <h2>Stay Updated</h2>
+        <p>Sign up for our newsletter to get the latest news and special offers!</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
     </main>
   );
 }
